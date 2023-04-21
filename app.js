@@ -8,9 +8,9 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var taskInput=document.querySelector(".add__task");//Add a new task.
+var addButton=document.querySelector(".add__button");//first button
+var incompleteTaskHolder=document.getElementById("todo-list");//ul of #todo-list
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -84,6 +84,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
+    console.log(label)
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("editMode");
     //If class of the parent is .editmode
@@ -131,7 +132,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #incompleteTasks.
+    //Append the task list item to the #todo-list.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
