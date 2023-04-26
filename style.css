@@ -1,4 +1,3 @@
-/* style reset */
 ul {
   margin: 0;
   padding: 0;
@@ -10,7 +9,6 @@ input,
 button {
   outline: none;
 }
-/* basic style */
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -72,7 +70,6 @@ button {
 .add__task:focus {
   color: #333;
 }
-/* headings */
 .add__title,
 .todo__title,
 .completed__title {
@@ -84,7 +81,6 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
-/* new task */
 .add__title {
   display: block;
   margin: 0 0 20px;
@@ -95,7 +91,6 @@ button {
 .add__task-wrapper {
   display: flex;
 }
-/* task list */
 .todo-item,
 .todo-item_edit {
   overflow: hidden;
@@ -104,10 +99,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.todo-item > *,
-.todo-item_edit > * {
-  vertical-align: middle;
 }
 .todo-item__checkbox {
   margin: 0 10px;
@@ -130,12 +121,10 @@ button {
 .todo-item__delete-img:hover {
   transform: rotateZ(0);
 }
-/* Completed */
 .completed__tasks {
   text-decoration: line-through;
   color: #888;
 }
-/* Edit Task */
 .todo-item__text {
   display: none;
 }
