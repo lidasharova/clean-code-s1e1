@@ -105,10 +105,6 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.todo-item > *,
-.todo-item_edit > * {
-  vertical-align: middle;
-}
 .todo-item__checkbox {
   margin: 0 10px;
 }
