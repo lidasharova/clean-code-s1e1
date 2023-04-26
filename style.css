@@ -53,7 +53,7 @@ button {
   cursor: pointer;
 }
 .button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 .todo-item__text,
 .add__task {
@@ -62,8 +62,8 @@ button {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -118,8 +118,8 @@ button {
   font-size: 18px;
   width: 226px;
 }
-.todo-item_edit > input[type="text"],
-.todo-item > input[type="text"] {
+.todo-item_edit > .text,
+.todo-item > .text {
   width: 226px;
 }
 .todo-item__delete-img {
@@ -139,7 +139,7 @@ button {
 .todo-item__text {
   display: none;
 }
-.todo-item_edit input[type="text"] {
+.todo-item_edit .text {
   display: inline-block;
   width: 224px;
 }
